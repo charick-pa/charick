@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="container mx-auto">
+        <h1 class="text-2xl font-bold mb-4">Hotel Reservation</h1>
+
+        <form id="reservationForm" class="bg-white p-6 rounded shadow-md">
+            <label for="checkInDate">Check-in Date:</label>
+            <input type="date" id="checkInDate" name="checkInDate" class="mb-4 p-2 border rounded">
+
+            <label for="checkOutDate">Check-out Date:</label>
+            <input type="date" id="checkOutDate" name="checkOutDate" class="mb-4 p-2 border rounded">
+
+            <label for="roomNumber">Room Number:</label>
+            <select id="roomNumber" name="roomNumber" class="mb-4 p-2 border rounded">
+                <!-- Populate with room numbers from the database -->
+                
+                
+
+            </select>
+
+            <button type="button" onclick="reserveRoom()" class="bg-blue-500 text-white p-2 rounded">Reserve Room</button>
+        </form>
+
+        <div id="reservationResult" class="mt-8"></div>
+    </div>
+
+    <script src="reservation.js"></script>
+</body>
+</html>
